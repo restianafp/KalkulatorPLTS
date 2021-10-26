@@ -5,6 +5,11 @@
       <map>
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/drawable/bg_btn_primary.xml" value="0.13385416666666666" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/drawable/bg_btn_secondary.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_get_started.xml" value="0.11822916666666666" />
+        <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_hasil_simple.xml" value="0.10416666666666667" />
+        <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_input_beban_advance.xml" value="0.10416666666666667" />
+        <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_input_data_advance.xml" value="0.11822916666666666" />
+        <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
       </map>
     </option>
   </component>
