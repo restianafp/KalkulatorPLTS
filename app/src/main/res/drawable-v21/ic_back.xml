@@ -1,0 +1,21 @@
+<ripple xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/colorRipple"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+      <!--suppress AndroidElementNotAllowed -->
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:width="32dp"
+          android:height="32dp"
+          android:viewportWidth="32"
+          android:viewportHeight="32"
+            tools:ignore="RedundantNamespace">
+        <!--suppress AndroidElementNotAllowed -->
+            <path
+            android:pathData="M16.0001,2.6667L16.3731,2.6719C23.5609,2.8696 29.3334,8.7648 29.3334,16.0001C29.3334,23.3467 23.3601,29.3334 16.0001,29.3334C8.6534,29.3334 2.6667,23.3467 2.6667,16.0001C2.6667,8.6401 8.6534,2.6667 16.0001,2.6667ZM18.6401,10.6667C18.2401,10.2667 17.6134,10.2667 17.2267,10.6667L12.5734,15.2934C12.3867,15.4801 12.2801,15.7334 12.2801,16.0001C12.2801,16.2667 12.3867,16.5201 12.5734,16.7067L17.2267,21.3334C17.4134,21.5334 17.6667,21.6267 17.9201,21.6267C18.1867,21.6267 18.4401,21.5334 18.6401,21.3334C19.0267,20.9334 19.0267,20.3067 18.6267,19.9201L14.6934,16.0001L18.6267,12.0801C19.0267,11.6934 19.0267,11.0534 18.6401,10.6667Z"
+            android:fillColor="#ffffff"/>
+      </vector>
+    </item>
+
+</ripple>
+

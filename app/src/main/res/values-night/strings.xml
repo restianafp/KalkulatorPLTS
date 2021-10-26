@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Kalkulator PLTS</string>
     <string name="title_hasil_ac_simple">Hasil perhitungan AC</string>
     <string name="subtitle_hasil_ac_simple">Hasil data yang diperlukan</string>
     <string name="rencana_beban_harian">Rencana Beban Harian</string>
