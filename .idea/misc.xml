@@ -7,14 +7,19 @@
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/drawable/bg_btn_primary.xml" value="0.13385416666666666" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/drawable/bg_btn_secondary.xml" value="0.13385416666666666" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_back.xml" value="0.11621621621621622" />
+        <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_beban_harian.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_energy_consumption.xml" value="0.20925925925925926" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_header.xml" value="0.11621621621621622" />
+        <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_solar_energy.xml" value="0.20925925925925926" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_get_started.xml" value="0.11822916666666666" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_hasil_simple.xml" value="0.10416666666666667" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_hasil_simple_ac.xml" value="0.18" />
+        <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_hasil_simple_dc.xml" value="0.12" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_input_beban_advance.xml" value="0.10416666666666667" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_input_beban_simple.xml" value="0.10416666666666667" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_input_data_advance.xml" value="0.11822916666666666" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+        <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/dropdown_item.xml" value="0.10758196721311475" />
       </map>
     </option>
   </component>
