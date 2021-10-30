@@ -43,18 +43,18 @@
         android:layout_gravity="center_horizontal"
         >
         <Button
-            android:id="@+id/btn_mode_simpel"
+            android:id="@+id/btn_mode_simple"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/buttonTitle"
             android:text="@string/mode_simple"/>
         <Button
-            android:id="@+id/btn_mode_advanced"
+            android:id="@+id/btn_mode_advance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/buttonTitle"
             android:layout_marginStart="22dp"
-            android:layout_toEndOf="@id/btn_mode_simpel"
+            android:layout_toEndOf="@id/btn_mode_simple"
             android:text="@string/mode_advanced"/>
 
     </RelativeLayout>
