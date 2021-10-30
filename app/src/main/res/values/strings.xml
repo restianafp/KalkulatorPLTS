@@ -8,6 +8,11 @@
     <string name="kapasitas_pv_no_inverter">Kapasitas PV w/o Inverter</string>
     <string name="kapasitas_inverter">Kapasitas Inverter</string>
     <string name="title_hasil_dc_simple">Hasil perhitungan DC</string>
+    <string name="input_beban">Input Beban</string>
+    <string name="input_beban_kebutuhan_listrik">Input beban kebutuhan listrik</string>
+    <string name="pilih_lokasi">Pilih Lokasi</string>
+    <string name="tambah_beban">Tambah Beban</string>
+    <string name="selanjutnya">Selanjutnya</string>
     <string-array name="sumber">
         <item>Baterai</item>
         <item>Panel Surya</item>
