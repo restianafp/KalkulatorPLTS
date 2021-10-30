@@ -13,6 +13,7 @@
     <string name="pilih_lokasi">Pilih Lokasi</string>
     <string name="tambah_beban">Tambah Beban</string>
     <string name="selanjutnya">Selanjutnya</string>
+    <string name="pilih_ac_cd">Pilih AC/CD</string>
     <string-array name="sumber">
         <item>Baterai</item>
         <item>Panel Surya</item>
