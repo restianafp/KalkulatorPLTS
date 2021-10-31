@@ -13,8 +13,27 @@
     <string name="pilih_lokasi">Pilih Lokasi</string>
     <string name="tambah_beban">Tambah Beban</string>
     <string name="selanjutnya">Selanjutnya</string>
+    <string name="input_data">Input Data</string>
+    <string name="input_data_tambahan">Input data tambahan</string>
     <string-array name="sumber">
         <item>Baterai</item>
         <item>Panel Surya</item>
     </string-array>
+    <string-array name="data_tegangan_baterai">
+        <item>Data 1</item>
+        <item>Data 2</item>
+    </string-array>
+    <string-array name="data_tegangan_baterai_unit">
+        <item>Data 1</item>
+        <item>Data 2</item>
+    </string-array>
+    <string-array name="data_rasio_performa">
+        <item>Data 1</item>
+        <item>Data 2</item>
+    </string-array>
+    <string-array name="data_rasio_acdc">
+        <item>Data 1</item>
+        <item>Data 2</item>
+    </string-array>
+
 </resources>
