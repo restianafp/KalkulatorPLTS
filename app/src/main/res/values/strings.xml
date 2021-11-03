@@ -6,6 +6,11 @@
     <string name="konsumsi_energi_harian">Konsumsi Energi Harian</string>
     <string name="kapasitas_baterai">Kapasitas Baterai</string>
     <string name="kapasitas_pv_no_inverter">Kapasitas PV w/o Inverter</string>
+    <string name="illustration">illustration</string>
+    <string name="kalkulator_plts">Kalkulator PLTS</string>
+    <string name="start_subtitle">Hitung seberapa banyak daya yang anda butuhkan untuk menentukan ukuran dan biaya susunan panel surya di rumah anda.</string>
+    <string name="mode_simple">Mode Simple</string>
+    <string name="mode_advanced">Mode Advance</string>
     <string name="kapasitas_inverter">Kapasitas Inverter</string>
     <string name="title_hasil_dc_simple">Hasil perhitungan DC</string>
     <string name="input_beban">Input Beban</string>
@@ -38,5 +43,4 @@
         <item>Data 1</item>
         <item>Data 2</item>
     </string-array>
-
 </resources>
