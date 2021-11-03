@@ -6,4 +6,6 @@
     <string name="konsumsi_energi_harian">Konsumsi Energi Harian</string>
     <string name="kapasitas_baterai">Kapasitas Baterai</string>
     <string name="kapasitas_pv_no_inverter">Kapasitas PV w/o Inverter</string>
+    <string name="kapasitas_inverter">Kapasitas Inverter</string>
+    <string name="title_hasil_dc_simple">Hasil perhitungan DC</string>
 </resources>

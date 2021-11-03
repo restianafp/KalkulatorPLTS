@@ -17,11 +17,26 @@
 
     </style>
 
+    <style name="basicFormStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+    </style>
+    <style name="dropdownFormStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+    </style>
+
     <style name="itemCardStyle" parent="CardView">
         <item name="android:background">@color/white</item>
         <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/colorShadow</item>
         <item name="cardCornerRadius">8dp</item>
-        <item name="cardElevation">10dp</item>
+        <item name="cardElevation">8dp</item>
     </style>
 
 
@@ -79,13 +94,13 @@
 
     <style name="textItemTitle" parent="TextAppearance.AppCompat">
         <item name="fontFamily">@font/montserrat_bold</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
     <style name="textItemSubtitle" parent="TextAppearance.AppCompat">
         <item name="fontFamily">@font/montserrat_medium</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/colorTextGray</item>
     </style>
 
