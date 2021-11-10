@@ -37,7 +37,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.19"
-            app:srcCompat="@drawable/ic_back" />
+            app:srcCompat="@drawable/ic_back"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/textView"
@@ -68,101 +69,56 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp">
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        style="@style/dropdownFormStyle">
 
-        <LinearLayout
+        <AutoCompleteTextView
+            android:id="@+id/et_pilih_lokasi"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/pilih_lokasi"
+            android:inputType="none"/>
 
-            <Button
-                android:id="@+id/btn_pilih_lokasi"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:backgroundTint="@null"
-                android:background="@drawable/bg_box_outline"
-                android:drawableRight="@drawable/ic_scroll_pilihan"
-                android:text="@string/pilih_lokasi"
-                android:textSize="16sp"
-                style="@style/textStartSubtitle"
-                android:textAllCaps="false"
-                android:gravity="center_vertical"
-                android:layout_gravity="center_vertical"
-                />
+    </com.google.android.material.textfield.TextInputLayout>
 
-
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp">
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        style="@style/dropdownFormStyle">
 
-        <LinearLayout
+        <AutoCompleteTextView
+            android:id="@+id/et_pilih_ac_dc"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/pilih_ac_cd"
+            android:inputType="none"/>
 
-            <Button
-                android:id="@+id/btn_acdc"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:backgroundTint="@null"
-                android:background="@drawable/bg_box_outline"
-                android:drawableRight="@drawable/ic_scroll_pilihan"
-                android:text="@string/pilih_ac_cd"
-                android:textSize="16sp"
-                style="@style/textStartSubtitle"
-                android:textAllCaps="false"
-                android:gravity="center_vertical"
-                android:layout_gravity="center_vertical"
-                />
+    </com.google.android.material.textfield.TextInputLayout>
 
-
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp">
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        style="@style/dropdownFormStyle">
 
-        <LinearLayout
+        <AutoCompleteTextView
+            android:id="@+id/et_total_energi_bulanan"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/total_energi_bulanan"
+            android:inputType="none"/>
 
-            <Button
-                android:id="@+id/btn_total_energi_bulanan"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:backgroundTint="@null"
-                android:background="@drawable/bg_box_outline"
-                android:drawableRight="@drawable/ic_scroll_pilihan"
-                android:text="Total Energi Bulanan (KWh)"
-                android:textSize="16sp"
-                style="@style/textStartSubtitle"
-                android:textAllCaps="false"
-                android:gravity="center_vertical"
-                android:layout_gravity="center_vertical"
-                />
-
-
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"

@@ -70,13 +70,13 @@
 
     <style name="textStartTitle" parent="TextAppearance.AppCompat">
         <item name="fontFamily">@font/montserrat_bold</item>
-        <item name="android:textSize">36sp</item>
+        <item name="android:textSize">30sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="textStartSubtitle" parent="TextAppearance.AppCompat">
         <item name="fontFamily">@font/montserrat_medium</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/colorTextGray</item>
     </style>
 
