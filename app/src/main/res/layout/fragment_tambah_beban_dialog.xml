@@ -40,7 +40,7 @@
         style="@style/dropdownFormStyle">
 
         <AutoCompleteTextView
-            android:id="@+id/et_tegangan_baterai"
+            android:id="@+id/et_sumber_beban"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

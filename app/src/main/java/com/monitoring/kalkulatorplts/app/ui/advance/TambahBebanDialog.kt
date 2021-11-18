@@ -7,8 +7,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import androidx.fragment.app.DialogFragment
 import com.monitoring.kalkulatorplts.R
+import com.monitoring.kalkulatorplts.app.ui.advance.model.BebanData
 import com.monitoring.kalkulatorplts.databinding.FragmentTambahBebanDialogBinding
 
 
@@ -24,5 +26,6 @@ class TambahBebanDialog : DialogFragment() {
         dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         return binding.root
     }
+
 
 }
