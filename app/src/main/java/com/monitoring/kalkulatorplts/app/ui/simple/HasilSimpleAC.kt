@@ -1,12 +1,56 @@
 package com.monitoring.kalkulatorplts.app.ui.simple
 
+import android.app.Application
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import com.monitoring.kalkulatorplts.R
+import com.monitoring.kalkulatorplts.app.ui.ViewModel
+import com.monitoring.kalkulatorplts.databinding.ActivityHasilAdvanceBinding
+import com.monitoring.kalkulatorplts.databinding.ActivityHasilSimpleAcBinding
 
 class HasilSimpleAC : AppCompatActivity() {
+    private lateinit var binding: ActivityHasilSimpleAcBinding
+    private lateinit var viewModel: ViewModel
+    private var bebanHarian = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hasil_simple_ac)
+        binding = ActivityHasilSimpleAcBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        viewModel = ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(
+            Application()
+        ))[ViewModel::class.java]
+
+        val totalBeban = intent.getStringExtra("totalBeban")
+        val dataPsh = intent.getStringExtra("dataPsh")
+
+        viewModel.convertEnergy(totalBeban)
+        viewModel.calculateDecSimple()
+        viewModel.calculateKapasitasBattSimple()
+        viewModel.calculateKapasitasInverterSimple(dataPsh)
+
+        initUi()
+
+
+
+    }
+
+    private fun initUi() {
+        viewModel.totalDailyEnergy.observe(this, Observer {
+            bebanHarian = it.toString()
+            binding.bebanHarian.setText(it.toString() + " Watt")
+
+        })
+        viewModel.hasilDec.observe(this, Observer {
+            binding.konsumsiEnergi.setText(String.format("%.2f",it) + " Watthour")
+        })
+        viewModel.hasilKapasitasBatt.observe(this, Observer {
+            binding.kapasitasBaterai.setText(String.format("%.2f",it) + " Watthour")
+        })
+        viewModel.hasilKapasitasInverter.observe(this, Observer {
+            binding.kapasitasPv.setText(String.format("%.2f",it)+ " Wattpeak")
+        })
     }
 }

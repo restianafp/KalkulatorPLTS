@@ -95,7 +95,7 @@
                             android:text="@string/rencana_beban_harian"/>
 
                         <TextView
-                            android:id="@+id/konsumsi_energi"
+                            android:id="@+id/beban_harian"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             style="@style/textItemSubtitle"
@@ -135,7 +135,7 @@
                             android:text="@string/konsumsi_energi_harian"/>
 
                         <TextView
-                            android:id="@+id/beban_harian"
+                            android:id="@+id/konsumsi_energi"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             style="@style/textItemSubtitle"

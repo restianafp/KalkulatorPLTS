@@ -15,7 +15,7 @@
             android:name=".app.ui.advance.HasilAdvance"
             android:exported="true" />
         <activity
-            android:name=".app.ui.advance.InputBebanAdvance"
+            android:name=".app.ui.advance.inputData.InputBebanAdvance"
             android:exported="true" />
         <activity
             android:name=".app.ui.simple.HasilSimpleDC"

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".app.ui.advance.TambahBebanDialog">
+    tools:context=".app.ui.advance.inputData.TambahBebanDialog">
 
 
     <TextView
+        android:id="@+id/titleTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_24"
@@ -17,12 +18,15 @@
         android:text="@string/tambah_beban" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/jenis_beban"
+        android:layout_below="@+id/titleTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="16dp"
         android:hint="@string/jenis_beban"
-        style="@style/basicFormStyle">
+        style="@style/basicFormStyle"
+        tools:ignore="InvalidId">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_jenis_beban"
@@ -33,6 +37,8 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sumber_beban"
+        android:layout_below="@+id/jenis_beban"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
@@ -50,6 +56,8 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/daya_beban"
+        android:layout_below="@+id/sumber_beban"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
@@ -61,11 +69,14 @@
             android:id="@+id/et_daya_beban"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/durasi_beban"
+        android:layout_below="@+id/daya_beban"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
@@ -77,11 +88,14 @@
             android:id="@+id/et_durasi_beban"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
+        android:id="@+id/btnTambahBeban"
+        android:layout_below="@+id/durasi_beban"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -108,4 +122,5 @@
 
     </LinearLayout>
 
-</LinearLayout>
+
+</RelativeLayout>

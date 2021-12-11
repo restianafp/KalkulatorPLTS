@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.monitoring.kalkulatorplts.R
-import com.monitoring.kalkulatorplts.app.ui.advance.InputBebanAdvance
+import com.monitoring.kalkulatorplts.app.ui.advance.inputData.InputBebanAdvance
 import com.monitoring.kalkulatorplts.app.ui.simple.InputBebanSimple
 
 class GetStarted : AppCompatActivity() {

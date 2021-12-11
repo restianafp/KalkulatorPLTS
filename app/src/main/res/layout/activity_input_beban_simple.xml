@@ -8,7 +8,6 @@
     android:orientation="vertical"
     tools:context=".app.ui.simple.InputBebanSimple">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -107,16 +106,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="8dp"
-        style="@style/dropdownFormStyle">
+        android:layout_marginTop="16dp"
+        android:hint="@string/total_energi_bulanan"
+        style="@style/basicFormStyle">
 
-        <AutoCompleteTextView
-            android:id="@+id/et_total_energi_bulanan"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_total_energi"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:hint="@string/total_energi_bulanan"
-            android:inputType="none"/>
+            android:layout_height="wrap_content"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
