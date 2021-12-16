@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".app.ui.advance.inputData.TambahBebanDialog">
+
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_24"
+        android:layout_marginTop="16dp"
+        style="@style/textItemTitle"
+        android:text="@string/tambah_beban" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/jenis_beban"
+        android:layout_below="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/jenis_beban"
+        style="@style/basicFormStyle"
+        tools:ignore="InvalidId">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_jenis_beban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sumber_beban"
+        android:layout_below="@+id/jenis_beban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        style="@style/dropdownFormStyle">
+
+        <AutoCompleteTextView
+            android:id="@+id/et_sumber_beban"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/sumber_beban"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/daya_beban"
+        android:layout_below="@+id/sumber_beban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/daya_watt"
+        style="@style/basicFormStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_daya_beban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/durasi_beban"
+        android:layout_below="@+id/daya_beban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/durasi_jam"
+        style="@style/basicFormStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_durasi_beban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/btnTambahBeban"
+        android:layout_below="@+id/durasi_beban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_24"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_batal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            style="@style/buttonSecondary"
+            android:textSize="16sp"
+            android:text="@string/batal"/>
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            style="@style/buttonPrimary"
+            android:textSize="16sp"
+            android:text="@string/tambah"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

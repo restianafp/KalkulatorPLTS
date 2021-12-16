@@ -8,4 +8,14 @@
     <string name="kapasitas_pv_no_inverter">Kapasitas PV w/o Inverter</string>
     <string name="kapasitas_inverter">Kapasitas Inverter</string>
     <string name="title_hasil_dc_simple">Hasil perhitungan DC</string>
+    <string name="kapasitas_pv_inverter">Kapasitas PV w/ Inverter</string>
+    <string name="title_hasil_perhitungan_adv">Hasil Perhitungan</string>
+    <string name="batal">Batal</string>
+    <string name="tambah">Tambah</string>
+    <string name="tambah_beban">Tambah Beban</string>
+    <string name="jenis_beban">Jenis Beban</string>
+    <string name="sumber_beban">Sumber</string>
+    <string name="daya_watt">Daya(Watt)</string>
+    <string name="durasi_jam">Durasi(jam)</string>
+    <string name="total_energi_bulanan">Total energi bulanan (kWh)</string>
 </resources>

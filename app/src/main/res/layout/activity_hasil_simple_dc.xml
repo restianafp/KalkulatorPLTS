@@ -256,7 +256,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             style="@style/textItemTitle"
-                            android:text="@string/kapasitas_pv_no_inverter"/>
+                            android:text="@string/kapasitas_pv_inverter"/>
 
                         <TextView
                             android:id="@+id/kapasitas_pv"
