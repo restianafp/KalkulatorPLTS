@@ -21,8 +21,7 @@ class TambahBebanDialog : DialogFragment() {
         const val TAG = "TambahBebanDialog"
     }
     private lateinit var  binding:FragmentTambahBebanDialogBinding
-    private lateinit var viewModel: ViewModel
-    private lateinit var bebanList: ArrayList<BebanData>
+
 
  
 

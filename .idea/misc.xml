@@ -25,17 +25,26 @@
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/fragment_tambah_beban_dialog.xml" value="0.16" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/item_beban.xml" value="0.1050925925925926" />
         <entry key="..\:/Users/resti/AndroidStudioProjects/KalkulatorPLTS/app/src/main/res/layout/item_dropdown.xml" value="0.10758196721311475" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_battery_charging.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_battery_full.xml" value="0.16041666666666668" />
         <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_get_started.xml" value="0.1" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_power_settings_new.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_scroll_pilihan.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/drawable/ic_solar_energy.xml" value="0.16041666666666668" />
         <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_get_started.xml" value="0.1" />
         <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_hasil_advance.xml" value="0.176" />
         <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_hasil_simple_ac.xml" value="0.140625" />
-        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_hasil_simple_dc.xml" value="0.1265625" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_hasil_simple_dc.xml" value="0.16" />
         <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_input_beban_advance.xml" value="0.22" />
         <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_input_beban_simple.xml" value="0.12" />
         <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_input_data_advance.xml" value="0.176" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/activity_splash.xml" value="0.14427083333333332" />
         <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/fragment_tambah_beban_dialog.xml" value="0.13020833333333334" />
-        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/item_beban.xml" value="0.4" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/item_beban.xml" value="0.264" />
         <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/layout/item_dropdown.xml" value="0.1265625" />
+        <entry key="..\:/Users/resti/StudioProjects/KalkulatorPLTS/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16041666666666668" />
       </map>
     </option>
   </component>

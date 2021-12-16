@@ -13,6 +13,7 @@ class ViewModel(application: Application) : AndroidViewModel(application){
     val lokasiRepository:LokasiRepository = LokasiRepository()
     var newList = arrayListOf<BebanData>()
     var totalEnergyBatt= MutableLiveData<Int>()
+    var totalUnitBatt= MutableLiveData<Double>()
     var totalEnergyPv = MutableLiveData<Int>()
     var totalDailyEnergy = MutableLiveData<Int>()
     var lokasiList = arrayListOf<Lokasi>()
@@ -43,11 +44,20 @@ class ViewModel(application: Application) : AndroidViewModel(application){
         listBeban.value = newList
     }
 
-    fun remove(bebanData: BebanData){
-        val dayaBeban = bebanData.dayaBeban.toInt()
-        val durasiBeban = bebanData.durasiBeban.toInt()
+    fun remove(position: Int){
+        val dayaBeban = newList[position].dayaBeban.toInt()
+        val durasiBeban = newList[position].durasiBeban.toInt()
+        val sumberBeban = newList[position].sumberBeban.toString()
         var energyPerHour = dayaBeban * durasiBeban
-        newList.remove(bebanData)
+        if (sumberBeban == "Baterai"){
+            energyBattery-=energyPerHour
+            totalEnergyBatt.value = energyBattery
+        }else{
+            energyPv-=energyPerHour
+            totalEnergyPv.value = energyPv
+        }
+        totalEnergy()
+        newList.remove(newList[position])
         listBeban.value= newList
     }
 
@@ -63,13 +73,17 @@ class ViewModel(application: Application) : AndroidViewModel(application){
             energyPv+=energyPerHour
             totalEnergyPv.value = energyPv
         }
+        totalEnergy()
+    }
+
+    fun totalEnergy(){
         var totalEnergy = energyBattery + energyPv
         totalDailyEnergy.value = totalEnergy
     }
 
-    fun convertEnergy(bebanData:String?){
+    fun convertEnergytoWh(bebanData:String?){
         val jumlahHari = 30
-        val formula = bebanData!!.toInt()/(1000*jumlahHari)
+        val formula = (bebanData!!.toInt() * 1000)/jumlahHari
         energiHarian = formula
         totalDailyEnergy.value = formula
     }
@@ -94,8 +108,14 @@ class ViewModel(application: Application) : AndroidViewModel(application){
 
     }
 
+    fun calculateJumlahBatt(tegangan: String?, kapasitas:String?){
+        val formula = (kapasitasBatt/tegangan!!.toDouble())/kapasitas!!.toDouble()
+        totalUnitBatt.value = formula
+
+    }
+
     fun calculateKapasitasInverter(dataPsh: String?, rasioPv: String?){
-        var formula = (dec*100/rasioPv!!.toDouble())/(dataPsh!!.toDouble()*0.75)
+        var formula = (dec*100/rasioPv!!.toDouble())/(dataPsh!!.toDouble()*0.7)
         kapasitasInverter = formula
         hasilKapasitasInverter.value = kapasitasInverter
     }
@@ -115,11 +135,12 @@ class ViewModel(application: Application) : AndroidViewModel(application){
 
     fun calculateKapasitasBattSimple(){
         var formula = ((dec-energiHarian)/(0.95*0.2)*1)
+        kapasitasBatt = formula
         hasilKapasitasBatt.value = formula
     }
 
     fun calculateKapasitasInverterSimple(dataPsh: String?){
-        var formula = (dec/0.75)/(dataPsh!!.toDouble()*0.75)
+        var formula = (dec/0.75)/(dataPsh!!.toDouble()*0.7)
         kapasitasInverter = formula
         hasilKapasitasInverter.value = kapasitasInverter
     }

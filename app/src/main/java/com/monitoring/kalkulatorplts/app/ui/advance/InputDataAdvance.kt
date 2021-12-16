@@ -58,6 +58,10 @@ class InputDataAdvance : AppCompatActivity() {
 
         }
 
+        binding.btnBack.setOnClickListener {
+            onBackPressed()
+        }
+
     }
 
     override fun onResume() {
@@ -81,6 +85,14 @@ class InputDataAdvance : AppCompatActivity() {
                 etHariOtonom.error = "Isi Hari Otonom"
                 return false
             }
+            if(etTeganganBaterai.text.isNullOrEmpty()){
+                etTeganganBaterai.error = "Isi Tegangan Baterai"
+                return false
+            }
+            if(etTeganganBateraiUnit.text.isNullOrEmpty()){
+                etTeganganBateraiUnit.error = "Isi Kapasitas Baterai Unit"
+                return false
+            }
             if(etRasioPerformaPv.text.isNullOrEmpty()){
                 etRasioPerformaPv.error = "Isi Rasio Performa PV"
                 return false
@@ -100,10 +112,6 @@ class InputDataAdvance : AppCompatActivity() {
         val adapter = ArrayAdapter(this, R.layout.item_dropdown, dataTeganganBaterai)
         binding.etTeganganBateraiUnit.setAdapter(adapter)
 
-        binding.etTeganganBateraiUnit.setOnItemClickListener { adapterView, view, position, id ->
-            val selectedValue = adapter.getItem(position)
-            Toast.makeText(this, selectedValue, Toast.LENGTH_LONG).show()
-        }
     }
 
     private fun showDropdownTeganganBaterai() {
@@ -111,9 +119,5 @@ class InputDataAdvance : AppCompatActivity() {
         val adapter = ArrayAdapter(this, R.layout.item_dropdown, dataTeganganBaterai)
         binding.etTeganganBaterai.setAdapter(adapter)
 
-        binding.etTeganganBaterai.setOnItemClickListener { adapterView, view, position, id ->
-            val selectedValue = adapter.getItem(position)
-            Toast.makeText(this, selectedValue, Toast.LENGTH_LONG).show()
-        }
     }
 }

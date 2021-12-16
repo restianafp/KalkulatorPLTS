@@ -36,9 +36,14 @@ class HasilAdvance : AppCompatActivity(){
 
         binding.bebanHarian.setText(totalDailyEnergy.toString() + " Watthour")
 
+        binding.btnBack.setOnClickListener {
+            onBackPressed()
+        }
+
 
         viewModel.calculateDec(efisiensi,totalEnergyPv,totalEnergyBatt)
         viewModel.calculateKapasitasBatt(totalEnergyPv,efisiensi,dodMax,hariOtonom)
+        viewModel.calculateJumlahBatt(tegangan,teganganUnit)
         viewModel.calculateKapasitasInverter(dataPsh, rasioPv)
         viewModel.calculateKapasitasPvInverter(rasioAcDc)
         initUi()
@@ -51,6 +56,9 @@ class HasilAdvance : AppCompatActivity(){
         })
         viewModel.hasilKapasitasBatt.observe(this, Observer {
             binding.kapasitasBaterai.setText(String.format("%.2f",it) + " Watthour")
+        })
+        viewModel.totalUnitBatt.observe(this,{
+            binding.jumlahBaterai.setText(String.format("%.2f",it) + " Unit" )
         })
         viewModel.hasilKapasitasInverter.observe(this, Observer {
             binding.kapasitasInverter.setText(String.format("%.2f",it)+ " Watt")

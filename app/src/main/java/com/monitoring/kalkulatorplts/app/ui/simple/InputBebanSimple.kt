@@ -35,9 +35,13 @@ class InputBebanSimple : AppCompatActivity() {
 
         }
 
+        binding.btnBack.setOnClickListener {
+            onBackPressed()
+        }
 
 
     }
+
 
     override fun onResume() {
         super.onResume()

@@ -18,4 +18,6 @@
     <string name="daya_watt">Daya(Watt)</string>
     <string name="durasi_jam">Durasi(jam)</string>
     <string name="total_energi_bulanan">Total energi bulanan (kWh)</string>
+    <string name="hapus">Hapus</string>
+    <string name="jumlah_unit_baterai">Jumlah Unit Baterai</string>
 </resources>

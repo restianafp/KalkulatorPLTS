@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
@@ -9,59 +10,93 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp">
 
-        <LinearLayout
-            android:padding="16dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/data_beban"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/jenis_beban"
-                style="@style/textItemTitle"
-                />
-
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp"
-                android:weightSum="3">
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/data_sumber"
+                    android:id="@+id/data_beban"
+                    style="@style/textItemTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/sumber_beban"
-                    style="@style/textItemSubtitle"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_battery_full"
-                    android:drawablePadding="3dp"/>
+                    android:layout_marginStart="4dp"
+                    android:text="@string/jenis_beban"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.257" />
 
                 <TextView
-                    android:id="@+id/data_daya"
+                    android:id="@+id/hapusTv"
+                    style="@style/textItemSubtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/daya_watt"
-                    style="@style/textItemSubtitle"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_power_settings_new"
-                    android:drawablePadding="3dp"/>
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/hapus"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toTopOf="@id/dataLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35" />
 
-                <TextView
-                    android:id="@+id/data_durasi"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/dataLayout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/durasi_jam"
-                    style="@style/textItemSubtitle"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_timer"
-                    android:drawablePadding="3dp"/>
-            </LinearLayout>
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/data_beban">
 
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/data_sumber"
+                        style="@style/textItemSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_battery_full"
+                        android:drawablePadding="3dp"
+                        android:text="@string/sumber_beban" />
+
+                    <TextView
+                        android:id="@+id/data_daya"
+                        style="@style/textItemSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_power_settings_new"
+                        android:drawablePadding="3dp"
+                        android:text="@string/daya_watt" />
+
+                    <TextView
+                        android:id="@+id/data_durasi"
+                        style="@style/textItemSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_timer"
+                        android:drawablePadding="3dp"
+                        android:text="@string/durasi_jam" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     </androidx.cardview.widget.CardView>
 

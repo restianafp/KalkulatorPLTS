@@ -45,13 +45,13 @@ class InputBebanAdvance : AppCompatActivity(), iCommunicator {
 
 
         binding.btnNext.setOnClickListener {
-            if (totalDailyEnergy == 0 ){
-                Toast.makeText(this, "Anda belum memasukkan beban", Toast.LENGTH_LONG).show()
-            }
             if(dataPsh == 0.0){
                 binding.etPilihLokasi.error = "Pilih lokasi"
             }
-            else {
+            if (totalDailyEnergy == 0){
+                Toast.makeText(this, "Anda belum memasukan beban",Toast.LENGTH_LONG).show()
+            }
+            else{
                 val intent = Intent(this, InputDataAdvance::class.java)
                 intent.putExtra("totalDailyEnergy", totalDailyEnergy.toString())
                 intent.putExtra("totalEnergyBatt", totalEnergyBatt.toString())
@@ -65,9 +65,20 @@ class InputBebanAdvance : AppCompatActivity(), iCommunicator {
             showDialogTambahBeban()
         }
 
+        binding.btnBack.setOnClickListener {
+            onBackPressed()
+        }
+
 
         getEnergy()
         initUi()
+
+        bebanAdapter.setOnCLickListener(object : BebanAdapter.onItemClickListener{
+            override fun onItemClick(position: Int) {
+                viewModel.remove(position)
+            }
+
+        })
 
 
     }
@@ -95,7 +106,6 @@ class InputBebanAdvance : AppCompatActivity(), iCommunicator {
     private fun getEnergy() {
         viewModel.totalEnergyBatt.observe(this, {
             totalEnergyBatt = it
-            Toast.makeText(this, totalEnergyBatt.toString(), Toast.LENGTH_LONG).show()
         })
         viewModel.totalEnergyPv.observe(this, {
             totalEnergyPv = it

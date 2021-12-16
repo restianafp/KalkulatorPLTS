@@ -33,21 +33,16 @@
         <item>Panel Surya</item>
     </string-array>
     <string-array name="data_tegangan_baterai">
-        <item>Data 1</item>
-        <item>Data 2</item>
+        <item>12</item>
+        <item>24</item>
+        <item>48</item>
     </string-array>
     <string-array name="data_tegangan_baterai_unit">
-        <item>Data 1</item>
-        <item>Data 2</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
     </string-array>
-    <string-array name="data_rasio_performa">
-        <item>Data 1</item>
-        <item>Data 2</item>
-    </string-array>
-    <string-array name="data_rasio_acdc">
-        <item>Data 1</item>
-        <item>Data 2</item>
-    </string-array>
+
     <string-array name="data_acdc">
         <item>AC</item>
         <item>DC</item>
@@ -59,4 +54,6 @@
     <string name="daya_watt">Daya(Watt)</string>
     <string name="durasi_jam">Durasi(jam)</string>
     <string name="total_energi_bulanan">Total energi bulanan (kWh)</string>
+    <string name="hapus">Hapus</string>
+    <string name="jumlah_unit_baterai">Jumlah Unit Baterai</string>
 </resources>
