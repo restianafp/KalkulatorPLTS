@@ -26,7 +26,8 @@
     <string name="pilih_ac_cd">Pilih AC/CD</string>
     <string name="input_data">Input Data</string>
     <string name="input_data_tambahan">Input data tambahan</string>
-
+    <string name="logo_aplikasi">logo_aplikasi</string>
+  
     <string-array name="sumber">
         <item>Baterai</item>
         <item>Panel Surya</item>
